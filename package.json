@@ -1,0 +1,40 @@
+{
+  "name": "eslint-plugin-angular-test-ids",
+  "version": "1.0.0",
+  "description": "Eslint rule that enforces test-id attributes on elements in Angular templates.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "git@github.com:undsoft/eslint-plugin-angular-test-ids.git",
+  "author": "Evgeny Stepanovych <undsoft@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "files": [
+    "dist",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "build": "yarn clean && microbundle --no-sourcemap --target=node --compress --format=cjs",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@angular-eslint/eslint-plugin-template": "^15.2.0",
+    "@angular-eslint/utils": "^15.0.0",
+    "@angular/compiler": "^15.1.0",
+    "@types/jest": "^29.4.0",
+    "@typescript-eslint/utils": "^5.50.0",
+    "eslint": "^8.33.0",
+    "jest": "^29.4.1",
+    "microbundle": "^0.15.1",
+    "rimraf": "^4.1.2",
+    "ts-jest": "^29.0.5",
+    "typescript": "^4.9.5"
+  },
+  "peerDependencies": {
+    "@angular-eslint/template-parser": "^15.2.0",
+    "eslint": "^7.20.0 || ^8.0.0",
+    "typescript": "*"
+  }
+}
