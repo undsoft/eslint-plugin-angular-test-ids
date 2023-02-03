@@ -18,5 +18,6 @@
     "baseUrl": ".",
     "lib": ["es2017"],
     "skipLibCheck": true,
-  }
+  },
+  "include": ["src"]
 }

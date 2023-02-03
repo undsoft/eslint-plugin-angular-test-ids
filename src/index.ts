@@ -1,10 +1,12 @@
 import requireTestIds, {
   RULE_NAME as requireTestIdsRuleName,
-} from './rules/require-test-ids';
+} from './rules/require-test-id';
 import { materialElements, nativeElements } from './utils/elements';
 
 export default {
   nativeElements,
   materialElements,
-  [requireTestIdsRuleName]: requireTestIds,
+  rules: {
+    [requireTestIdsRuleName]: requireTestIds,
+  },
 }

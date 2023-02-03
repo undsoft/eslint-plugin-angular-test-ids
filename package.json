@@ -6,8 +6,15 @@
   "types": "dist/index.d.ts",
   "repository": "git@github.com:undsoft/eslint-plugin-angular-test-ids.git",
   "author": "Evgeny Stepanovych <undsoft@gmail.com>",
+  "homepage": "git@github.com:undsoft/eslint-plugin-angular-test-ids.git",
   "license": "MIT",
   "private": false,
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "angular"
+  ],
   "files": [
     "dist",
     "package.json",
@@ -22,6 +29,7 @@
   "dependencies": {
     "@angular-eslint/eslint-plugin-template": "^15.2.0",
     "@angular-eslint/utils": "^15.0.0",
+    "@angular-eslint/template-parser": "^15.2.0",
     "@angular/compiler": "^15.1.0",
     "@types/jest": "^29.4.0",
     "@typescript-eslint/utils": "^5.50.0",
