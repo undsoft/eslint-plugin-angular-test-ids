@@ -3,7 +3,7 @@ import requireTestIds, {
 } from './rules/require-test-id';
 import { materialElements, nativeElements } from './utils/elements';
 
-export default {
+export = {
   nativeElements,
   materialElements,
   rules: {
