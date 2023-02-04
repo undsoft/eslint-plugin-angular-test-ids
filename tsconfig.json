@@ -1,23 +1,13 @@
 {
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "allowUnreachableCode": false,
-    "allowUnusedLabels": false,
-    "declaration": false,
-    "declarationMap": false,
-    "esModuleInterop": true,
-    "module": "es2015",
-    "moduleResolution": "node",
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "pretty": true,
-    "sourceMap": false,
+    "target": "es5",
+    "module": "commonjs",
     "strict": true,
-    "target": "es2017",
-    "baseUrl": ".",
-    "lib": ["es2017"],
+    "outDir": "./dist",
+    "esModuleInterop": true,
     "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
   },
-  "include": ["src"]
+  "include": ["src/**/*"],
+  "exclude": ["src/tests/*"]
 }
