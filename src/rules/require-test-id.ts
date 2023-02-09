@@ -2,6 +2,7 @@ import { getTemplateParserServices } from '@angular-eslint/utils';
 import { TmplAstElement } from '@angular-eslint/bundled-angular-compiler';
 import { JSONSchema } from '@typescript-eslint/utils';
 import { createRule } from '../utils/create-rule';
+import { materialElements, nativeElements } from '../utils/elements';
 
 export type Options = readonly [
   {
@@ -40,8 +41,8 @@ export const SCHEMA: JSONSchema.JSONSchema4 = [
 const defaultOptions: Options = [
   {
     overrideElements: [
-      'button', 'tr', 'input', 'select', 'textarea',
-      'mat-select', 'mat-option',
+      ...nativeElements,
+      ...materialElements,
     ],
     attribute: 'data-test',
   },
