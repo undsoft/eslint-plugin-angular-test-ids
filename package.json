@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-angular-test-ids",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Eslint rule that enforces test-id attributes on elements in Angular templates.",
   "main": "dist/index.js",
   "repository": "git@github.com:undsoft/eslint-plugin-angular-test-ids.git",
